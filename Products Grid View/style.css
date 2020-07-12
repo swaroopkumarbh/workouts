@@ -14,6 +14,7 @@
   text-align: left;
   box-shadow: 0 0 1px black;
   border: 1px solid white;
+  width: fit-content;
 }
 .topdiv{
   background-color: black;
