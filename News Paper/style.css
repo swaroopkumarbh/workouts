@@ -1,0 +1,46 @@
+hr{
+    background-color: black !important;
+    font-size: large;
+}
+.text-right{
+    text-align: right !important;
+}
+.div-1 h1{
+    font-size: 108px;
+    
+}
+.column-image{
+    padding-top: 25px;
+}
+div{
+    word-wrap: break-word;
+}
+.slant{
+    background-color: rgb(202, 65, 65);
+    display: inline-table;
+    transform: skew(10deg);
+    transform-origin: bottom;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    z-index: 1;
+    
+}
+.img-label{
+    z-index: 0;
+    margin-top: -30px;
+}
+.center-column-para{
+text-align: center;
+color: rgb(206, 61, 61);
+}
+
+.slant-two{
+    background-color: rgb(202, 65, 65);
+    display: inline-table;
+    transform: skew(10deg);
+    transform-origin: bottom;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    z-index: 1;
+    
+}
