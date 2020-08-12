@@ -24,6 +24,8 @@ var Movie = /** @class */ (function () {
     return Movie;
 }());
 var movie = new Movie('Casino Royale', 'Eon Productions', 'PG13');
+var movieAbc = new Movie('ABC', 'Eon Productions', 'PG');
 var movieList = [];
 movieList[0] = movie;
+movieList[1] = movieAbc;
 console.log(movie.getPG(movieList));

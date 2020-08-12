@@ -30,6 +30,8 @@ class Movie {
 
 }
 let movie = new Movie('Casino Royale', 'Eon Productions', 'PG13');
+let movieAbc = new Movie('ABC', 'Eon Productions', 'PG');
 var movieList=[];
 movieList[0]=movie;
+movieList[1]=movieAbc;
 console.log(movie.getPG(movieList));
