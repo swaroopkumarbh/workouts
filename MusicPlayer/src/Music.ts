@@ -1,4 +1,4 @@
-export class Songs {
+export class Music {
     title: string;
     artist: string;
     album: string;
