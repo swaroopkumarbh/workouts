@@ -1,0 +1,1 @@
+db.student.find({"primary address":{$regex:".*Chennai.*"}}).count();
