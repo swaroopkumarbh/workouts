@@ -1,0 +1,1 @@
+db.student.update({name:"Vijay"},{$set:{"primary address":"123 abc nagar Chennai."}});

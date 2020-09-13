@@ -1,0 +1,1 @@
+db.student.find({"favourite teacher":"Anitha"}).count();
