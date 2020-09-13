@@ -1,0 +1,34 @@
+db.film.find();
+
+db.film.find({},{title:1,_id:0});
+
+db.film.find({},{director:1,_id:0});
+
+db.film.find({},{title:1,director:1,_id:0});
+
+db.film.find({},{title:1,year:1,_id:0});
+
+db.film.find({id:6});
+
+db.film.find({$or:[{year: {$lte:2000}},{year:{$gte:2010}}]});
+
+db.film.find({$and:[
+{year:{$not:{$gte:2000}}},
+{year:{$not:{$lte:2010}}}
+]});
+
+db.film.find().limit(5).pretty();
+
+db.film.find({"title":{$regex:".*Toy Story.*"}});
+
+db.film.find({director:"John Lasseter"});
+
+db.film.find({director:{$ne:"John Lasseter"}});
+
+db.film.find({"title":{$regex:"WALL-.*"}});
+
+db.film.aggregate([{$sort:{year:-1}},{$limit:4}]);
+
+db.film.aggregate([{$sort:{title:1}},{$limit:5}]);
+
+db.film.aggregate([{$sort:{title:1}},{$skip:5},{$limit:5}]);
