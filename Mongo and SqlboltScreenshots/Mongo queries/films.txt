@@ -10,12 +10,9 @@ db.film.find({},{title:1,year:1,_id:0});
 
 db.film.find({id:6});
 
-db.film.find({$or:[{year: {$lte:2000}},{year:{$gte:2010}}]});
+db.film.find({$and:[{year: {$gt:2000}},{year:{$lt:2010}}]});
 
-db.film.find({$and:[
-{year:{$not:{$gte:2000}}},
-{year:{$not:{$lte:2010}}}
-]});
+db.film.find({$or:[{year: {$lte:2000}},{year:{$gte:2010}}]});
 
 db.film.find().limit(5).pretty();
 
